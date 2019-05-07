@@ -1,6 +1,5 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-<<<<<<< HEAD
 import './style.css';
 
 
@@ -39,50 +38,6 @@ class Board extends React.Component<IBoardProps, {}> {
   public render() {
     return (
       <div>
-=======
-import App from './App';
-import './index.css';
-import registerServiceWorker from './registerServiceWorker';
-
-ReactDOM.render(
-  <App />,
-  document.getElementById('root') as HTMLElement
-);
-registerServiceWorker();
-
-interface ISquareProps{
-  value: number;
-}
-
-interface IState{
-  value: string;
-}
-
-class Square extends React.Component<ISquareProps,IState> {
-  public render() {
-    return (
-      <button className="square">
-        <div>
-          {this.props.value}
-        </div>
-      </button>
-    );
-  }
-}
-
-
-class Board extends React.Component{
-  renderSquare(i: number) {
-    return <Square value={i}/>;
-  }
-
-  render() {
-    const status = 'Next player: X';
-
-    return (
-      <div>
-        <div className="status">{status}</div>
->>>>>>> origin/master
         <div className="board-row">
           {this.renderSquare(0)}
           {this.renderSquare(1)}
@@ -103,7 +58,6 @@ class Board extends React.Component{
   }
 }
 
-<<<<<<< HEAD
 interface IHistoryData{
   squares: Array<'O' | 'X' | null>;
 }
@@ -213,27 +167,3 @@ class Game extends React.Component<{}, IGameState> {
     }
     return null;
   }
-=======
-class Game extends React.Component {
-  render() {
-    return (
-      <div className="game">
-        <div className="game-board">
-          <Board />
-        </div>
-        <div className="game-info">
-          <div>{/* status */}</div>
-          <ol>{/* TODO */}</ol>
-        </div>
-      </div>
-    );
-  }
-}
-
-// ========================================
-
-ReactDOM.render(
-  <Game />,
-  document.getElementById('root')
-);
->>>>>>> origin/master

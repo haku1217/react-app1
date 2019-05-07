@@ -6,7 +6,6 @@
       "node_modules/**/*.ts",
       "coverage/lcov-report/*.js"
     ]
-<<<<<<< HEAD
   },
   "rules": {
     "no-default-export": false,
@@ -22,7 +21,5 @@
     "member-access": false,
     "no-for-in-array": false,
     "prefer-for-of": false
-=======
->>>>>>> origin/master
   }
 }
